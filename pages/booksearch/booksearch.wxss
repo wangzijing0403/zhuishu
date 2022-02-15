@@ -1,0 +1,52 @@
+.cell {
+  margin-bottom: 30rpx;
+}
+.cell .book {
+  width: 100%;
+  height: 250rpx;
+  display: flex;
+}
+.cell .book .image {
+  flex: 1;
+}
+.cell .book .image image {
+  width: 165rpx;
+  margin: 20rpx;
+}
+.cell .book .about {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+.cell .book .about .book_name {
+  flex: 2;
+  font-size: 16px;
+  padding: 20rpx;
+  color: #3b3a3a;
+}
+.cell .book .about .book_about {
+  flex: 3;
+  font-size: 14px;
+  padding: 18rpx;
+  color: #817070;
+  overflow: hidden;
+}
+.cell .book .about .book_author {
+  flex: 2;
+  font-size: 12px;
+  padding: 20rpx;
+  color: #817070;
+  display: flex;
+}
+.cell .book .about .book_author .author_name {
+  flex: 6;
+}
+.cell .book .about .book_author .book_score {
+  flex: 4;
+}
+.cell .book .about .book_author .book_score text {
+  margin-left: 10rpx;
+  padding: 0 10rpx;
+  background-color: #cccccc;
+  border-radius: 20rpx;
+}

@@ -1,0 +1,56 @@
+<!-- http://statics.zhuishushenqi.com/ -->
+<view class="grid">
+    <view class="type">男生</view>
+    <van-grid column-num="2" border="{{ false }}"  direction="horizontal">
+        <van-grid-item use-slot wx:for="{{ male }}" wx:for-item="item" wx:key="*this" url="/pages/bookdetail/bookdetail?gender=male&query={{item.name}}">
+            <view class="class">
+                <view class="img">
+                    <image src="http://statics.zhuishushenqi.com{{item.bookCover[0]}}" class="img_left" mode="widthFix" />
+                    <image src="http://statics.zhuishushenqi.com{{item.bookCover[1]}}" class="img_center" mode="widthFix" />
+                    <image src="http://statics.zhuishushenqi.com{{item.bookCover[2]}}" class="img_right" mode="widthFix" />
+                </view>
+                <view class="mag">
+                <text class="name">{{item.name}}</text>
+                <text class="count">{{item.bookCount}}本</text>
+                </view>
+            </view>
+        </van-grid-item>
+    </van-grid>
+</view>
+<view class="grid">
+    <view class="type">女生</view>
+    <van-grid column-num="2" border="{{ false }}"  direction="horizontal">
+        <van-grid-item use-slot wx:for="{{ female }}" wx:for-item="item" wx:key="*this" url="/pages/bookdetail/bookdetail?gender=female&query={{item.name}}">
+            <view class="class">
+                <view class="img">
+                    <image src="http://statics.zhuishushenqi.com{{item.bookCover[0]}}" class="img_left" mode="widthFix" />
+                    <image src="http://statics.zhuishushenqi.com{{item.bookCover[1]}}" class="img_center" mode="widthFix" />
+                    <image src="http://statics.zhuishushenqi.com{{item.bookCover[2]}}" class="img_right" mode="widthFix" />
+                </view>
+                <view class="mag">
+                <text class="name">{{item.name}}</text>
+                <text class="count">{{item.bookCount}}本</text>
+                </view>
+            </view>
+        </van-grid-item>
+    </van-grid>
+</view>
+<view class="grid">
+    <view class="type">经典</view>
+    <van-grid column-num="2" border="{{ false }}"  direction="horizontal">
+        <van-grid-item use-slot wx:for="{{ press }}" wx:for-item="item" wx:key="*this" url="/pages/bookdetail/bookdetail?gender=press&query={{item.name}}">
+            <view class="class">
+                <view class="img">
+                    <image src="http://statics.zhuishushenqi.com{{item.bookCover[0]}}" class="img_left" mode="widthFix" />
+                    <image src="http://statics.zhuishushenqi.com{{item.bookCover[1]}}" class="img_center" mode="widthFix" />
+                    <image src="http://statics.zhuishushenqi.com{{item.bookCover[2]}}" class="img_right" mode="widthFix" />
+                </view>
+                <view class="mag">
+                <text class="name">{{item.name}}</text>
+                <text class="count">{{item.bookCount}}本</text>
+                </view>
+            </view>
+        </van-grid-item>
+    </van-grid>
+</view>
+

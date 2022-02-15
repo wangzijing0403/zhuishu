@@ -1,0 +1,15 @@
+{
+  "usingComponents": {
+    "van-rate": "../../conmonpents/dist/rate/index",
+    "van-cell": "../../conmonpents/dist/cell/index",
+    "van-cell-group": "../../conmonpents/dist/cell-group/index",
+    "van-collapse": "../../conmonpents/dist/collapse/index",
+    "van-collapse-item": "../../conmonpents/dist/collapse-item/index",
+    "van-toast": "../../conmonpents/dist/toast/index",
+    "van-image": "../../conmonpents/dist/image/index",
+    "van-goods-action": "../../conmonpents/dist/goods-action/index",
+    "van-goods-action-icon": "../../conmonpents/dist/goods-action-icon/index",
+    "van-button": "../../conmonpents/dist/button/index",
+    "van-goods-action-button": "../../conmonpents/dist/goods-action-button/index"
+  }
+}

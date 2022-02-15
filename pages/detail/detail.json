@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-cell": "../../conmonpents/dist/cell/index",
+    "van-cell-group": "../../conmonpents/dist/cell-group/index",
+    "van-toast": "../../conmonpents/dist/toast/index",
+    "van-notice-bar": "../../conmonpents/dist/notice-bar/index"
+  }
+}

@@ -1,0 +1,67 @@
+<!-- http://statics.zhuishushenqi.com/ -->
+<!-- <view class="">
+    <image class="icon" src="http://statics.zhuishushenqi.com{{book.cover}}" mode="widthFix" />
+</view> -->
+<view class="cell">
+    <view class="book">
+        <view class="image">
+            <image class="icon" src="http://statics.zhuishushenqi.com{{book.cover}}" mode="widthFix" />
+        </view>
+        <view class="about">
+            <view class="name">
+                <text>{{book.title}}</text>
+            </view>
+            <view class="star">
+                <text>{{star?star:0}}</text>
+                <van-rate readonly value="{{ star }}" color="#ffd21e" />
+            </view>
+            <view class="author">
+                <text>{{book.author}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="news">
+    <view class="word">
+        <text class="number">{{wordCount}}万</text>
+        <text class="class">总字数</text>
+    </view>
+    <view class="ratio">
+        <text class="number">{{book.retentionRatio}}%</text>
+        <text class="class">读者留存</text>
+    </view>
+    <view class="follower">
+        <text class="number">{{follower}}万</text>
+        <text class="class">粉丝数</text>
+    </view>
+</view>
+<van-collapse class="info" value="{{ activeNames }}" bind:change="onChange">
+    <van-collapse-item title="简介" name="1">{{book.longIntro}}</van-collapse-item>
+</van-collapse>
+<block wx:if="{{review.length!=0}}">
+    <view class="cell">
+        <text>热门评论</text>
+        <view class="review" wx:for="{{review}}" wx:for-item="item" wx:key="_id">
+            <van-cell use-label-slot title="">
+                <view slot="icon">
+                    <van-image round width="2rem" height="2rem" src="http://statics.zhuishushenqi.com{{item.author.avatar}}" />
+                </view>
+                <view slot="label">
+                    <text>{{item.content}}</text>
+                </view>
+                <view class="title" slot="title">
+                    <view class="nickname"><text>{{item.author.nickname}}</text></view>
+                    <view class="updated"><text >{{item.updated}}</text></view>
+                </view>
+            </van-cell>
+        </view>
+    </view>
+</block>
+<block wx:else>
+    <view class="none">暂无评论</view>
+</block>
+<van-goods-action>
+   <van-goods-action-button  bind:click="onClickJoin" text="{{joinbook}}" type="warning" color="{{color}}"/>
+  <van-goods-action-button bindtap ="onClickBegin"  text="开始阅读" />
+</van-goods-action>
+<van-toast id="van-toast" />

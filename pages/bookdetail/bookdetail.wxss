@@ -1,0 +1,96 @@
+.cell {
+  margin-bottom: 30rpx;
+}
+.cell .book {
+  width: 100%;
+  height: 250rpx;
+  display: flex;
+}
+.cell .book .image {
+  flex: 1;
+}
+.cell .book .image image {
+  width: 165rpx;
+  margin: 20rpx;
+}
+.cell .book .about {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+.cell .book .about .book_name {
+  flex: 1;
+  font-size: 32rpx;
+  padding: 20rpx;
+  color: #3b3a3a;
+}
+.cell .book .about .book_about {
+  flex: 3;
+  font-size: 28rpx;
+  padding: 18rpx;
+  color: #817070;
+  overflow: hidden;
+}
+.cell .book .about .book_author {
+  flex: 2;
+  font-size: 24rpx;
+  padding: 20rpx;
+  color: #817070;
+  display: flex;
+}
+.cell .book .about .book_author .author_name {
+  flex: 6;
+}
+.cell .book .about .book_author .book_score {
+  flex: 4;
+}
+.cell .book .about .book_author .book_score text {
+  margin-left: 10rpx;
+  padding: 0 10rpx;
+  background-color: #cccccc;
+  border-radius: 20rpx;
+}
+.type {
+  display: flex;
+  margin: 10rpx;
+  padding: 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+.type view {
+  flex: 1;
+  text-align: center;
+  margin: 0 40rpx;
+  font-size: 14px;
+  color: #8b8b8b;
+  border-radius: 20rpx;
+}
+.type .active {
+  color: red;
+  border: 1px solid red;
+}
+.cat {
+  display: flex;
+  margin: 10rpx;
+  padding: 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+.cat scroll-view view {
+  flex: 1;
+  width: 150rpx;
+  text-align: center;
+  font-size: 14px;
+  display: inline-block;
+  color: #8b8b8b;
+  border-radius: 20rpx;
+}
+.cat scroll-view .active {
+  color: red;
+  border: 1px solid red;
+}
+.none {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50rpx;
+  margin-bottom: 150rpx;
+  color: #ccc;
+}

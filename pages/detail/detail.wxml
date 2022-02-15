@@ -1,0 +1,9 @@
+<view class="title" wx:for="{{chapter}}" wx:for-item="item">
+    <block wx:if="{{item.isVip}}">
+        <van-notice-bar mode="link" color="#cccccc" text="{{item.title}}" is-link  bindtap="typeHandler" />
+    </block>
+    <block wx:else>
+        <van-notice-bar mode="link" text="{{item.title}}" is-link data-id="{{item.link}}" bindtap="typeHandler" />
+    </block>
+</view>
+<van-toast id="van-toast" />

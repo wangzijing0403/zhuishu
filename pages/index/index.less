@@ -1,0 +1,88 @@
+// .van-cell {
+//   .label{
+//     display: flex;
+//     .icons{
+//       flex:1;
+//           margin-right: 10rpx;
+//           .icon{
+//               width: 100rpx;
+//               height: 100rpx;
+//           } 
+//         }
+//     .book{
+//         flex:4;
+//         display: flex;
+//         flex-direction:column;
+//         .title{
+//           font-size: 15px;
+//           color: #000;
+//         }
+//         .auther{
+//           font-size: 10px;
+//           color:#ccc;
+//         }
+//     }
+//     }
+// }
+
+.cell{
+  // background-color: red;
+  margin-bottom: 30rpx;
+  .van-cell__title{
+    font-size: 30px!important;
+  }
+  .book{
+      width: 100%;
+      height: 250rpx;
+      // border: 1px solid red;
+      display: flex;
+      // background-color: red;
+    .image{
+      flex: 1;
+      image{
+        width: 165rpx;
+        margin: 20rpx;
+      }
+    }
+    .about{
+      flex: 3;
+      display: flex;
+      flex-direction:column;
+      .book_name{
+        flex: 2;
+        font-size: 40rpx;
+        padding: 20rpx;
+        color: rgb(59, 58, 58);
+      }
+      .book_about{
+        flex: 3;
+        font-size: 24rpx;
+        padding: 18rpx;
+        color: rgb(129, 112, 112);
+        overflow: hidden;
+      }
+      .book_author{
+        flex: 2;
+        font-size: 24rpx;
+        padding: 20rpx;
+        color: rgb(129, 112, 112);
+        display: flex;
+        .icon{
+          flex: 1;
+        }
+        .author_name{
+          flex: 6;
+        }
+        .book_score{
+          flex: 6;
+          text{
+            margin-left: 10rpx;
+            padding: 0 10rpx;
+            background-color: #ccc;
+            border-radius: 20rpx;
+          }
+        }
+      }
+    }
+  }
+}

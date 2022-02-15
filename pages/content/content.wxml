@@ -1,0 +1,22 @@
+<view class="content">
+    <text class="text">{{content.cpContent}}</text>
+</view>
+<block wx:if="{{content.order==1}}">
+    <van-nav-bar right-text="下一章" bind:click-right="onClickRight" data-id="{{content.order}}">
+        <view slot="title">
+            <navigator open-type="navigateBack">
+                <text>目录</text>
+            </navigator>
+        </view>
+    </van-nav-bar>
+</block>
+<block wx:else>
+    <van-nav-bar left-text="上一章" right-text="下一章" bind:click-left="onClickLeft" bind:click-right="onClickRight" data-id="{{content.order}}">
+        <view slot="title">
+            <navigator open-type="navigateBack">
+                <text>目录</text>
+            </navigator>
+        </view>
+    </van-nav-bar>
+</block>
+<van-toast id="van-toast" />

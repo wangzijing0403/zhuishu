@@ -1,0 +1,14 @@
+ <!-- http://statics.zhuishushenqi.com/ -->
+ <view class="contianer2">
+     <navigator wx:for="{{userInfo}}" wx:for-item="book" class="book" url="/pages/book/book?id={{book.id}}">
+        <image class="img" src="http://statics.zhuishushenqi.com{{book.cover}}" mode="widthFix" lazy-load="true"> 
+        </image>
+        <view class="title">
+            <text>《</text>{{book.title}}<text>》</text>
+        </view>
+        <!-- 传书索引 -->
+         <view catchtap="delete" data-id='{{index}}' class="btn">x</view>
+    </navigator>
+   
+ </view>
+        

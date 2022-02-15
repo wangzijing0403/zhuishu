@@ -1,0 +1,19 @@
+<view class="cell" wx:for="{{book}}" wx:for-item="item" wx:key="_id">
+    <navigator class="book" url="/pages/book/book?id={{item._id}}">
+        <view class="image">
+            <image class="icon" src="http://statics.zhuishushenqi.com{{item.cover}}" mode="widthFix" />
+        </view>
+        <view class="about">
+            <text class="book_name">{{item.title}}</text>
+            <text class="book_about">{{item.shortIntro}}</text>
+            <view class="book_author">
+                <van-icon name="manager" class="icon" />
+                <text class="author_name">{{item.author}}</text>
+                <view class="book_score">
+                    <text>{{item.retentionRatio}}存留</text>
+                </view>
+            </view>
+        </view>
+    </navigator>
+</view>
+<van-toast id="van-toast" />

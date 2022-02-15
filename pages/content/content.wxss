@@ -1,0 +1,13 @@
+.content {
+  background-color: #ccc;
+}
+.content .text {
+  font-size: 35rpx;
+  color: #545454;
+}
+van-nav-bar .van-nav-bar {
+  background-color: #ccc;
+}
+van-nav-bar .van-nav-bar .van-nav-bar__text {
+  background-color: #ccc;
+}

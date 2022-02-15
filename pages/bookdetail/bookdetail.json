@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-grid": "../../conmonpents/dist/tab/index",
+    "van-grid-item": "../../conmonpents/dist/tabs/index",
+    "van-toast": "../../conmonpents/dist/toast/index",
+    "van-icon": "../../conmonpents/dist/icon/index"
+  },
+  "enablePullDownRefresh": true
+}
